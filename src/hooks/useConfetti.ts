@@ -23,8 +23,6 @@ const useConfetti = () => {
       x: 0.5,
       y: 1
     },
-    // 残る時間
-    duration: 100000,
     // z-indexを指定(default:100)
     zIndex: 100
   });
@@ -50,8 +48,6 @@ const useConfetti = () => {
       x: 0.5,
       y: 1
     },
-    // 残る時間
-    duration: 100000,
     // z-indexを指定(default:100)
     zIndex: 100
   });

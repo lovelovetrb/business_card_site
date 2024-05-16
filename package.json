@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tsparticles/react": "^3.0.0",
+    "@types/canvas-confetti": "^1.6.4",
     "autoprefixer": "^10.4.19",
     "canvas-confetti": "^1.9.3",
     "destyle.css": "^4.0.1",

@@ -5,7 +5,6 @@ import CustomParticle from "./components/CustomParticle";
 import ProfileCard from "./components/ProfileCard";
 import MeetUpInfo from "./components/MeetUpInfo";
 import { MeetUpInfoType } from "./types";
-import useConfetti from "./hooks/useConfetti";
 import confetti from "canvas-confetti";
 
 function App() {
@@ -40,8 +39,6 @@ function App() {
         x: 0.5,
         y: 1
       },
-      // 残る時間
-      duration: 100000,
       // z-indexを指定(default:100)
       zIndex: 100
     });
