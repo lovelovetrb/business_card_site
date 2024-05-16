@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+root{
+  --marker-color: rgba(255, 250, 125, 0.86) 
+};
+
+body {
+  background-color: #000000;
+}
+
+#root {
+  height: 100vh;
+}
+
+.marker {
+  background-color: rgba(255, 250, 125, 0.32);
+}
