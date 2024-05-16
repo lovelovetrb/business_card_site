@@ -1,7 +1,11 @@
 
-import { MeetUpInfoType } from "./types";
+import { MeetUpInfoType } from "@/types";
 
-const MeetUpInfo = ({ info }: MeetUpInfoType) => {
+type Props = {
+  info: MeetUpInfoType;
+};
+
+const MeetUpInfo = ({ info }: Props) => {
   console.log(info)
   return (
     <div className="text-center">
