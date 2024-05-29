@@ -8,7 +8,7 @@ const linkList = [
     icon: faHouse,
   },
   {
-    href: "risu-note.net",
+    href: "https://risu-note.net",
     icon: faBlog,
   },
   {
