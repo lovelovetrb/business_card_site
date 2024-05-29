@@ -2,6 +2,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faRectangleAd, faBlog, faHouse } from "@fortawesome/free-solid-svg-icons";
 
+const linkList = [
+  {
+    href: "https://lovelovetrb.com",
+    icon: faHouse,
+  },
+  {
+    href: "risu-note.net",
+    icon: faBlog,
+  },
+  {
+    href: "https://github.com/lovelovetrb",
+    icon: faGithub,
+  },
+  {
+    href: "https://twitter.com/lovelovetrb",
+    icon: faTwitter,
+  },
+  {
+    href: "https://lovelovetrb.fanbox.cc/",
+    icon: faRectangleAd,
+  },
+]
 const ProfileCard = () => {
   return (
     <div className="flex flex-col lg:flex-row">
@@ -22,65 +44,28 @@ const ProfileCard = () => {
           静岡大学 狩野研究室所属
         </h3>
         <div className="flex align-center justify-center my-2">
-          <p>
-            <a
-              className="cursor-pointer text-xl"
-              href="https://lovelovetrb.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faHouse} />
-            </a>
-          </p>
-          <p>
-            <a
-              className="cursor-pointer text-xl ml-5"
-              href="https://twitter.com/lovelovetrb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </p>
-          <p>
-            <a
-              className="cursor-pointer text-xl  ml-5"
-              href="https://github.com/lovelovetrb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </p>
-          <p>
-            <a
-              className="cursor-pointer text-xl  ml-5"
-              href="https://risu-note.net"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faBlog} />
-            </a>
-          </p>
-          <p>
-            <a
-              className="cursor-pointer text-xl ml-5"
-              href="https://lovelovetrb.fanbox.cc/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faRectangleAd} />
-            </a>
-          </p>
+          {linkList.map((link) => (
+            <p>
+              <a
+                key={link.href}
+                className="cursor-pointer text-xl ml-5"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={link.icon} />
+              </a>
+            </p>
+          ))}
         </div>
         <p className="mt-2">
           専門分野は自然言語処理です。
         </p>
         <p className="mt-1">
-          その他、Webアプリケーション開発、電子工作なども行っております！
+          その他、Webアプリケーション開発、電子工作なども興味があります！
         </p>
         <p className="mt-1">
-          Twitterやブログもやっておりますので、ぜひフォローしてください！
+          X(Twitter)やGithubのフォローお願い致します！
         </p>
       </div>
     </div>
